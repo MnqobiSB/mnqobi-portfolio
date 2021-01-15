@@ -13,7 +13,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 function Main () {
 	return (
-		<div>
+		<div className="container">
 			<Header />
 			{/* <TransitionGroup>
 				<CSSTransition classNames="page" timeout={300}>

@@ -13,6 +13,18 @@ function Header () {
 	return (
 		<React.Fragment>
 			<div className="navigation">
+				<div className="navigation__logo-box">
+					<img
+						src="logo.png"
+						alt="Mnqobi's logo"
+						className="navigation__logo"
+					/>
+					<p className="navigation__title">
+						<span className="color-accent">&lt;</span> mnqobi{' '}
+						<span className="color-accent">&frasl;&gt;</span>
+					</p>
+				</div>
+
 				<input
 					type="checkbox"
 					className="navigation__checkbox"

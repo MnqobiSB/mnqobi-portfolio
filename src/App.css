@@ -1,1 +1,49 @@
+/* MAIN NAV */
+.navigation {
+	font-size: 1.4rem;
+	height: 7rem;
+	background-color: transparent;
+	max-width: 120rem;
+	margin: 0 auto;
 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navigation__logo-box {
+	display: flex;
+	align-items: center;
+}
+
+.navigation__logo {
+	width: 4rem;
+	margin-right: 1rem;
+}
+
+.navigation__title {
+	font-family: var(--font-secondary);
+	font-size: 2.4rem;
+	color: var(--color-primary-dark);
+}
+
+.navigation__checkbox {
+	display: none;
+}
+
+.navigation__list {
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+
+.navigation__item {
+	padding: 0 2rem;
+}
+
+.navigation__link:link,
+.navigation__link:visited {
+	color: var(--color-dark);
+	text-decoration: none;
+	text-transform: uppercase;
+}
