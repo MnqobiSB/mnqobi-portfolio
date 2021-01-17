@@ -1,10 +1,10 @@
 /* MAIN NAV */
 .navigation {
+	grid-column: center-start / center-end;
+
 	font-size: 1.4rem;
 	height: 7rem;
 	background-color: transparent;
-	max-width: 120rem;
-	margin: 0 auto;
 
 	display: flex;
 	justify-content: space-between;
@@ -198,4 +198,25 @@
 		top: 0;
 		transform: rotate(-135deg);
 	}
+}
+
+/* HomeComponent Start */
+
+.home__content {
+	grid-column: center-start / col-end 4;
+	align-items: center;
+	padding: 3rem 4vw;
+
+	display: grid;
+	align-content: center;
+	justify-items: start;
+}
+
+.home__picture {
+	grid-column: col-start 5 / center-end;
+	padding: 4rem;
+}
+
+.home__img {
+	width: 100%;
 }

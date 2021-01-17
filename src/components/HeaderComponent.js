@@ -11,7 +11,7 @@ function Header () {
 	}
 
 	return (
-		<React.Fragment>
+		<div className="container">
 			<div className="navigation">
 				<div className="navigation__logo-box">
 					<img
@@ -106,7 +106,7 @@ function Header () {
 					</ul>
 				</nav>
 			</div>
-		</React.Fragment>
+		</div>
 	);
 }
 

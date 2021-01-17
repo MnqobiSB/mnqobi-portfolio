@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './HeaderComponent';
-// import Home from './HomeComponent';
+import Home from './HomeComponent';
 // import About from './AboutComponent';
 // import Skills from './SkillsComponent';
 // import Education from './EducationComponent';
@@ -13,13 +13,13 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 function Main () {
 	return (
-		<div className="container">
+		<div>
 			<Header />
-			{/* <TransitionGroup>
+			<TransitionGroup>
 				<CSSTransition classNames="page" timeout={300}>
 					<Switch>
 						<Route path="/home" component={() => <Home />} />
-						<Route
+						{/* <Route
 							exact
 							path="/about-me"
 							component={() => <About />}
@@ -49,11 +49,11 @@ function Main () {
 							path="/contact-me"
 							component={() => <Contact />}
 						/>
-						<Redirect to="/home" />
+						<Redirect to="/home" /> */}
 					</Switch>
 				</CSSTransition>
 			</TransitionGroup>
-			<Footer /> */}
+			{/* <Footer /> */}
 		</div>
 	);
 }
