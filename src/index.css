@@ -12,7 +12,7 @@
 	--font-secondary: 'Ubuntu Mono', monospace;
 
 	--color-primary: #00ad45;
-	--color-primary-dark: #013f1a;
+	--color-primary-dark: #008836;
 
 	--color-dark: #282828;
 	--color-light: #cdcdcd;
@@ -46,4 +46,11 @@ body {
 
 .container {
 	background-color: var(--color-grey-light-1);
+}
+
+.btn {
+	background-color: var(--color-primary);
+	color: var(--color-grey-light-1);
+	padding: 1.5rem 2rem;
+	border-radius: 3px;
 }

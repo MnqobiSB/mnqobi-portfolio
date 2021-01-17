@@ -5,7 +5,7 @@ function Header () {
 	const [ checked, setChecked ] = React.useState(false);
 
 	function toggleCheck () {
-		if (window.innerWidth <= 800) {
+		if (window.innerWidth <= 900) {
 			setChecked((ifChecked) => !ifChecked);
 		}
 	}
@@ -20,7 +20,7 @@ function Header () {
 						className="navigation__logo"
 					/>
 					<p className="navigation__title">
-						<span className="color-accent">&lt;</span> mnqobi{' '}
+						<span className="color-accent">&lt;</span>mnqobi{''}
 						<span className="color-accent">&frasl;&gt;</span>
 					</p>
 				</div>
@@ -64,7 +64,7 @@ function Header () {
 								className="navigation__link"
 								onClick={toggleCheck}
 							>
-								My Skills
+								Skills
 							</NavLink>
 						</li>
 						<li className="navigation__item">
@@ -73,7 +73,7 @@ function Header () {
 								className="navigation__link"
 								onClick={toggleCheck}
 							>
-								My Education
+								Education
 							</NavLink>
 						</li>
 						<li className="navigation__item">
@@ -82,7 +82,7 @@ function Header () {
 								className="navigation__link"
 								onClick={toggleCheck}
 							>
-								My Services
+								Services
 							</NavLink>
 						</li>
 						<li className="navigation__item">
@@ -91,7 +91,7 @@ function Header () {
 								className="navigation__link"
 								onClick={toggleCheck}
 							>
-								My Work
+								Projects
 							</NavLink>
 						</li>
 						<li className="navigation__item">
