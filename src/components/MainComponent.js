@@ -7,7 +7,7 @@ import Home from './HomeComponent';
 // import Services from './ServicesComponent';
 // import Work from './WorkComponent.js';
 // import Contact from './ContactComponent';
-// import Footer from './FooterComponent';
+import Footer from './FooterComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
@@ -49,11 +49,12 @@ function Main () {
 							path="/contact-me"
 							component={() => <Contact />}
 						/>
-						<Redirect to="/home" /> */}
+						*/}
+						<Redirect to="/home" />
 					</Switch>
 				</CSSTransition>
 			</TransitionGroup>
-			{/* <Footer /> */}
+			<Footer />
 		</div>
 	);
 }

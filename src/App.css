@@ -1,10 +1,17 @@
 /* MAIN NAV */
 .navigation {
-	grid-column: center-start / center-end;
+	grid-column: full-start / full-end;
+	background-color: var(--color-dark);
+}
 
+.navigation__container {
+	grid-column: center-start / center-end;
 	font-size: 1.4rem;
 	height: 7rem;
-	background-color: transparent;
+	max-width: 112rem;
+	margin: 0 auto;
+
+	border-bottom: 1px solid green;
 
 	display: flex;
 	justify-content: space-between;
@@ -17,13 +24,14 @@
 }
 
 .navigation__logo {
-	width: 4rem;
+	width: 5rem;
 	margin-right: 1rem;
 }
 
 .navigation__title {
 	font-family: var(--font-secondary);
-	font-size: 2.8rem;
+	color: var(--color-grey-light-1);
+	font-size: 3rem;
 }
 
 .navigation__checkbox {
@@ -65,18 +73,13 @@
 
 .navigation__link:link,
 .navigation__link:visited {
-	color: var(--color-dark);
+	color: var(--color-grey-light-1);
 	text-decoration: none;
 	text-transform: uppercase;
 	display: block;
 	padding: 1rem 1.8rem;
 	position: relative;
 	z-index: 10;
-}
-
-.navigation__link:hover {
-	color: var(--color-grey-light-1);
-	transition: all .2s ease-in .4s;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -205,7 +208,7 @@
 .home__content {
 	grid-column: center-start / col-end 4;
 	align-items: center;
-	padding: 3rem 4vw;
+	padding: 4vw;
 
 	display: grid;
 	align-content: center;
@@ -219,4 +222,56 @@
 
 .home__img {
 	width: 100%;
+}
+
+/* FooterComponent Start */
+.footer {
+	background-color: var(--color-dark);
+	grid-column: full-start/full-end;
+	padding: 4rem;
+	padding-top: 6rem;
+	-webkit-clip-path: polygon(
+		15% 0,
+		85% 11%,
+		100% 0,
+		100% 100%,
+		0 100%,
+		0 11%
+	);
+	clip-path: polygon(15% 0, 85% 11%, 100% 0, 100% 100%, 0 100%, 0 11%);
+}
+.footer__logo {
+	width: 6rem;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 3rem;
+}
+.footer__nav {
+	list-style: none;
+	max-width: 20rem;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+	grid-gap: 2rem;
+	align-items: center;
+	justify-items: center;
+}
+.footer__nav-icon {
+	width: 2.4rem;
+}
+.copyright {
+	font-size: 1.4rem;
+	color: var(--color-grey-light-2);
+	margin-top: 3rem;
+	text-align: center;
+}
+.copyright__bull {
+	font-size: 2rem;
+	color: var(--color-primary);
+	margin: 0 .5rem;
+}
+.copyright__heart {
+	font-size: 2rem;
+	color: red;
+	margin: 0 .5rem;
 }
