@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './HeaderComponent';
 import Home from './HomeComponent';
-// import About from './AboutComponent';
+import About from './AboutComponent';
 // import Skills from './SkillsComponent';
 // import Education from './EducationComponent';
 // import Services from './ServicesComponent';
@@ -19,12 +19,13 @@ function Main () {
 				<CSSTransition classNames="page" timeout={300}>
 					<Switch>
 						<Route path="/home" component={() => <Home />} />
-						{/* <Route
+						<Route
 							exact
 							path="/about-me"
 							component={() => <About />}
 						/>
-						<Route
+
+						{/* <Route
 							exact
 							path="/my-skills"
 							component={() => <Skills />}
@@ -48,8 +49,8 @@ function Main () {
 							exact
 							path="/contact-me"
 							component={() => <Contact />}
-						/>
-						*/}
+						/> */}
+
 						<Redirect to="/home" />
 					</Switch>
 				</CSSTransition>
