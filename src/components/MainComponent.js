@@ -4,7 +4,7 @@ import Home from './HomeComponent';
 import About from './AboutComponent';
 import Skills from './SkillsComponent';
 import Services from './ServicesComponent';
-// import Work from './WorkComponent.js';
+import Work from './WorkComponent.js';
 // import Contact from './ContactComponent';
 import Footer from './FooterComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
@@ -33,12 +33,13 @@ function Main () {
 							path="/my-services"
 							component={() => <Services />}
 						/>
-						{/* 
 						<Route
 							exact
 							path="/my-work"
 							component={() => <Work />}
 						/>
+						{/* 
+						
 						<Route
 							exact
 							path="/contact-me"

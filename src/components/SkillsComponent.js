@@ -17,6 +17,7 @@ function Skills () {
 						className="skill__icon"
 						iconSet={iconSet}
 						icon="html-five"
+						color="#e34c26"
 					/>
 					<h3 className="heading-3 heading-3--dark">HTML5</h3>
 					<p className="skill__text">
