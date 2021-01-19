@@ -123,14 +123,14 @@ body {
 }
 .heading-3 {
 	font-family: var(--font-secondary);
-	font-weight: 400;
-	font-size: 1.6rem;
+	font-weight: 500;
+	font-size: 2rem;
 	color: var(color-primary);
 	text-transform: uppercase;
 }
 
 .home__text {
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	font-style: italic;
 	margin-bottom: 4rem;
 }

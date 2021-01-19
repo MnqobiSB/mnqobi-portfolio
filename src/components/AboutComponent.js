@@ -13,7 +13,7 @@ function About () {
 			</div>
 
 			<div className="about__content">
-				<h1 className="heading-1 heading-1--dark mb-md">About me</h1>
+				<h1 className="heading-1 mb-md">About me</h1>
 				<h2 className="heading-2 mb-sm">Why hire me</h2>
 
 				<p className="home__text">

@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './HeaderComponent';
 import Home from './HomeComponent';
 import About from './AboutComponent';
-// import Skills from './SkillsComponent';
+import Skills from './SkillsComponent';
 // import Education from './EducationComponent';
 // import Services from './ServicesComponent';
 // import Work from './WorkComponent.js';
@@ -24,13 +24,12 @@ function Main () {
 							path="/about-me"
 							component={() => <About />}
 						/>
-
-						{/* <Route
+						<Route
 							exact
 							path="/my-skills"
 							component={() => <Skills />}
 						/>
-						<Route
+						{/* <Route
 							exact
 							path="/education"
 							component={() => <Education />}
@@ -50,7 +49,6 @@ function Main () {
 							path="/contact-me"
 							component={() => <Contact />}
 						/> */}
-
 						<Redirect to="/home" />
 					</Switch>
 				</CSSTransition>
