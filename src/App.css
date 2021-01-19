@@ -419,6 +419,32 @@
 	display: flex;
 }
 
+/* ContactComponent Start */
+
+.contact__content {
+	grid-column: col-start 4 / center-end;
+
+	align-items: center;
+	padding: 4vw;
+
+	display: grid;
+	align-content: center;
+	justify-items: start;
+}
+
+.contact__picture {
+	grid-column: center-start / col-end 3;
+	padding: 4rem;
+
+	display: grid;
+	align-content: center;
+	justify-items: start;
+}
+
+.contact__img {
+	width: 100%;
+}
+
 /* FooterComponent Start */
 .footer {
 	background-color: var(--color-dark);

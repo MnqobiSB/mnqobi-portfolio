@@ -7,7 +7,7 @@ function About () {
 			<div className="about__picture">
 				<img
 					src="about-me.png"
-					alt="Front end developer guy"
+					alt="Amandla Mzolo"
 					className="about__img"
 				/>
 			</div>

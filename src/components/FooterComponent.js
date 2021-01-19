@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import iconSet from '../icomoon/selection.json';
 import IcomoonReact from 'icomoon-react';
 
@@ -14,40 +14,40 @@ function Footer () {
 				/>
 				<ul className="footer__nav">
 					<li className="footer__nav-item">
-						<NavLink to="#" className="footer__nav-link">
+						<Link to="#" className="footer__nav-link">
 							<IcomoonReact
 								className="footer__nav-icon"
 								iconSet={iconSet}
 								icon="github"
 							/>
-						</NavLink>
+						</Link>
 					</li>
 					<li className="footer__nav-item">
-						<NavLink to="#" className="footer__nav-link">
+						<Link to="#" className="footer__nav-link">
 							<IcomoonReact
 								className="footer__nav-icon"
 								iconSet={iconSet}
 								icon="linkedin"
 							/>
-						</NavLink>
+						</Link>
 					</li>
 					<li className="footer__nav-item">
-						<NavLink to="#" className="footer__nav-link">
+						<Link to="#" className="footer__nav-link">
 							<IcomoonReact
 								className="footer__nav-icon"
 								iconSet={iconSet}
 								icon="twitter"
 							/>
-						</NavLink>
+						</Link>
 					</li>
 					<li className="footer__nav-item">
-						<NavLink to="#" className="footer__nav-link">
+						<Link to="#" className="footer__nav-link">
 							<IcomoonReact
 								className="footer__nav-icon"
 								iconSet={iconSet}
 								icon="facebook"
 							/>
-						</NavLink>
+						</Link>
 					</li>
 				</ul>
 

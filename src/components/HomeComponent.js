@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Home () {
 	return (
@@ -14,9 +14,9 @@ function Home () {
 				</h2>
 
 				<p className="home__text">Welcome to my personal portfolio!</p>
-				<NavLink to="/contact" className="btn">
+				<Link to="/contact" className="btn">
 					Hire me &rarr;
-				</NavLink>
+				</Link>
 			</div>
 
 			<div className="home__picture">
