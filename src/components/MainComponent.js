@@ -3,8 +3,7 @@ import Header from './HeaderComponent';
 import Home from './HomeComponent';
 import About from './AboutComponent';
 import Skills from './SkillsComponent';
-// import Education from './EducationComponent';
-// import Services from './ServicesComponent';
+import Services from './ServicesComponent';
 // import Work from './WorkComponent.js';
 // import Contact from './ContactComponent';
 import Footer from './FooterComponent';
@@ -29,16 +28,12 @@ function Main () {
 							path="/my-skills"
 							component={() => <Skills />}
 						/>
-						{/* <Route
-							exact
-							path="/education"
-							component={() => <Education />}
-						/>
 						<Route
 							exact
-							path="/services"
-							component={<Services />}
+							path="/my-services"
+							component={() => <Services />}
 						/>
+						{/* 
 						<Route
 							exact
 							path="/my-work"

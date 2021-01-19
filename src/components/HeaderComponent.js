@@ -56,7 +56,7 @@ function Header () {
 									className="navigation__link"
 									onClick={toggleCheck}
 								>
-									About me
+									About Me
 								</NavLink>
 							</li>
 							<li className="navigation__item">
@@ -65,25 +65,16 @@ function Header () {
 									className="navigation__link"
 									onClick={toggleCheck}
 								>
-									Skills
+									My Skills
 								</NavLink>
 							</li>
 							<li className="navigation__item">
 								<NavLink
-									to="/education"
+									to="/my-services"
 									className="navigation__link"
 									onClick={toggleCheck}
 								>
-									Education
-								</NavLink>
-							</li>
-							<li className="navigation__item">
-								<NavLink
-									to="/services"
-									className="navigation__link"
-									onClick={toggleCheck}
-								>
-									Services
+									My Services
 								</NavLink>
 							</li>
 							<li className="navigation__item">
@@ -92,7 +83,7 @@ function Header () {
 									className="navigation__link"
 									onClick={toggleCheck}
 								>
-									Projects
+									My Work
 								</NavLink>
 							</li>
 							<li className="navigation__item">
@@ -101,7 +92,7 @@ function Header () {
 									className="navigation__link"
 									onClick={toggleCheck}
 								>
-									Contact me
+									Contact Me
 								</NavLink>
 							</li>
 						</ul>
