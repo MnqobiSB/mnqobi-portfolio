@@ -1,15 +1,50 @@
 import React, { Component } from 'react';
 import iconSet from '../icomoon/selection.json';
 import IcomoonReact from 'icomoon-react';
+import axios from 'axios';
 
 class Contact extends Component {
 	constructor (props) {
 		super(props);
+		this.state = {
+			name: '',
+			email: '',
+			message: ''
+		};
 
-		this.handleSubmit = this.handleSubmit.bind(this);
+		this.onNameChange = this.onNameChange.bind(this);
+		this.onEmailChange = this.onEmailChange.bind(this);
+		this.onMsgChange = this.onMsgChange.bind(this);
 	}
 
-	handleSubmit (values) {}
+	onNameChange (event) {
+		this.setState({ name: event.target.value });
+	}
+	onEmailChange (event) {
+		this.setState({ email: event.target.value });
+	}
+	onMsgChange (event) {
+		this.setState({ message: event.target.value });
+	}
+
+	submitEmail (e) {
+		e.preventDefault();
+		axios({
+			method: 'POST',
+			url: '/send',
+			data: this.state
+		}).then((response) => {
+			if (response.data.status === 'success') {
+				alert('Message Sent.');
+				this.resetForm();
+			} else if (response.data.status === 'fail') {
+				alert('Message failed to send.');
+			}
+		});
+	}
+	resetForm () {
+		this.setState({ name: '', email: '', subject: '', message: '' });
+	}
 
 	render () {
 		return (
@@ -66,7 +101,12 @@ class Contact extends Component {
 					<h3 className="heading-3 heading-3--dark mb-sm">
 						Send me a message
 					</h3>
-					<form className="form">
+					<form
+						id="contact-form"
+						className="form"
+						onSubmit={this.submitEmail}
+						method="POST"
+					>
 						<div className="form__group">
 							<input
 								type="text"
@@ -74,6 +114,9 @@ class Contact extends Component {
 								className="form__input"
 								name="name"
 								placeholder="Name"
+								required
+								value={this.state.name}
+								onChange={this.onNameChange}
 							/>
 							<label htmlFor="name" className="form__label">
 								Name
@@ -86,6 +129,9 @@ class Contact extends Component {
 								className="form__input"
 								name="email"
 								placeholder="Email"
+								required
+								value={this.state.email}
+								onChange={this.onEmailChange}
 							/>
 							<label htmlFor="name" className="form__label">
 								Email
@@ -98,6 +144,9 @@ class Contact extends Component {
 								name="message"
 								placeholder="Message"
 								rows="8"
+								required
+								value={this.state.message}
+								onChange={this.onMsgChange}
 							/>
 							<label htmlFor="message" className="form__label">
 								Message
