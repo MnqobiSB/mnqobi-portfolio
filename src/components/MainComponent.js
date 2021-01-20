@@ -8,18 +8,7 @@ import Work from './WorkComponent.js';
 import Contact from './ContactComponent';
 import Footer from './FooterComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { postFeedback } from '../redux/ActionCreators';
-import { actions } from 'react-redux-form';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-
-const mapDispatchToProps = (dispatch) => ({
-	resetFeedbackForm: () => {
-		dispatch(actions.reset('feedback'));
-	},
-	postFeedback: (name, email, message) =>
-		dispatch(postFeedback(name, email, message))
-});
 
 function Main () {
 	return (
@@ -63,4 +52,4 @@ function Main () {
 	);
 }
 
-export default withRouter(connect(mapDispatchToProps)(Main));
+export default withRouter(Main);
