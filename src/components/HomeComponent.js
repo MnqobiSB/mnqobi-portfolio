@@ -14,7 +14,7 @@ function Home () {
 				</h2>
 
 				<p className="home__text">Welcome to my personal portfolio!</p>
-				<Link to="/contact" className="btn">
+				<Link to="/contact-me" className="btn">
 					Hire me &rarr;
 				</Link>
 			</div>
