@@ -34,7 +34,7 @@ class Contact extends Component {
 
 		axios({
 			method: 'POST',
-			url: '/api/forma',
+			url: 'https://mnqobi-portfolio-backend.herokuapp.com/api/forma',
 			data: data
 		})
 			.then((response) => {
