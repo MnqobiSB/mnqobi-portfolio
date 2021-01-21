@@ -9,7 +9,7 @@ function Skills () {
 				My skills
 			</h1>
 			<h2 className="heading-2 heading-2--skills-heading mb-sm">
-				Everything I have learned so far
+				Skills that I have learned so far
 			</h2>
 			<section className="skills">
 				<div className="skill">
@@ -21,8 +21,8 @@ function Skills () {
 					/>
 					<h3 className="heading-3 heading-3--dark">HTML5</h3>
 					<p className="skill__text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit.
+						Competent in HTML5. Able to apply it semantically to
+						improve accessibility and SEO.
 					</p>
 				</div>
 
@@ -34,8 +34,8 @@ function Skills () {
 					/>
 					<h3 className="heading-3 heading-3--dark">CSS3</h3>
 					<p className="skill__text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit.
+						Able to code different layouts and apply advanced
+						techniques to style a page the way I want.
 					</p>
 				</div>
 
@@ -47,8 +47,8 @@ function Skills () {
 					/>
 					<h3 className="heading-3 heading-3--dark">JavaScript</h3>
 					<p className="skill__text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit.
+						Able to use JavaScript tools to solve software problems.
+						Competent in vanilla JS, ES6 and JS libraries.
 					</p>
 				</div>
 
@@ -60,8 +60,8 @@ function Skills () {
 					/>
 					<h3 className="heading-3 heading-3--dark">Bootstrap</h3>
 					<p className="skill__text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit.
+						Able to use the Bootstrap library to build various
+						layouts and functionality.
 					</p>
 				</div>
 
@@ -73,8 +73,8 @@ function Skills () {
 					/>
 					<h3 className="heading-3 heading-3--dark">SASS</h3>
 					<p className="skill__text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit.
+						Able to use Sass tools to make coding CSS managable,
+						maintainabel and easy to scale.
 					</p>
 				</div>
 
@@ -86,8 +86,8 @@ function Skills () {
 					/>
 					<h3 className="heading-3">REACT</h3>
 					<p className="skill__text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit.
+						Compete with React. Able to use React tools and best
+						practices to build cool web apps &amp; SPA's.
 					</p>
 				</div>
 
@@ -99,8 +99,8 @@ function Skills () {
 					/>
 					<h3 className="heading-3">NODE.JS</h3>
 					<p className="skill__text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit.
+						Enjoy using Node.JS in my applications, because I
+						understand well and find it easy to emplement.
 					</p>
 				</div>
 
@@ -112,8 +112,8 @@ function Skills () {
 					/>
 					<h3 className="heading-3">NPM</h3>
 					<p className="skill__text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit.
+						I enjoy working with the JS stack and NPM is an
+						important part to my work-flow.
 					</p>
 				</div>
 
@@ -125,8 +125,8 @@ function Skills () {
 					/>
 					<h3 className="heading-3">YARN</h3>
 					<p className="skill__text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit.
+						I sometimes use Yarn to manage my packages. I like use
+						to when I'm working with React.
 					</p>
 				</div>
 
@@ -138,8 +138,8 @@ function Skills () {
 					/>
 					<h3 className="heading-3">GIT</h3>
 					<p className="skill__text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit.
+						Git/Github are very important tool for any developer's
+						workflow. I understand Git and use it in my projects.
 					</p>
 				</div>
 
@@ -149,10 +149,10 @@ function Skills () {
 						iconSet={iconSet}
 						icon="gulp"
 					/>
-					<h3 className="heading-3">GULP</h3>
+					<h3 className="heading-3">GRUNT</h3>
 					<p className="skill__text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit.
+						I find Grunt easy to emplement as my task runner when I
+						need to run a tast runner in my projects.
 					</p>
 				</div>
 
@@ -164,8 +164,8 @@ function Skills () {
 					/>
 					<h3 className="heading-3">HEROKU</h3>
 					<p className="skill__text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit.
+						I understand how use Heroku tools to deploy my apps. I
+						use it mostly for my full stack projects.
 					</p>
 				</div>
 
@@ -177,8 +177,8 @@ function Skills () {
 					/>
 					<h3 className="heading-3">VS CODE</h3>
 					<p className="skill__text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit.
+						VS Code is my favourite code editor because it has great
+						tools that boost developer work-flow.
 					</p>
 				</div>
 
@@ -190,8 +190,8 @@ function Skills () {
 					/>
 					<h3 className="heading-3">FIGMA</h3>
 					<p className="skill__text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit.
+						I use Figma design mark-ups &amp; prototypes for my
+						projects before I start coding them.
 					</p>
 				</div>
 
@@ -203,8 +203,8 @@ function Skills () {
 					/>
 					<h3 className="heading-3">WORDPRESS</h3>
 					<p className="skill__text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit.
+						I sometimes use WordPress to achieve certain goals and
+						for clients that ask for it.
 					</p>
 				</div>
 			</section>

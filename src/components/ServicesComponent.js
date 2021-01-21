@@ -9,7 +9,7 @@ function Services () {
 				My services
 			</h1>
 			<h2 className="heading-2 heading-2--services-heading mb-sm">
-				What I can do
+				Things I can do
 			</h2>
 			<section className="services">
 				<div className="service">
@@ -23,8 +23,8 @@ function Services () {
 						Web Development
 					</h3>
 					<p className="service__text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit.
+						Able to build various types of websites, from simple
+						brochure websites to advanced full stack web apps.
 					</p>
 				</div>
 
@@ -39,8 +39,8 @@ function Services () {
 						Responsive Design
 					</h3>
 					<p className="service__text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit.
+						Able to use CSS and sometimes JS build fully responsible
+						websites that look great on various devices.
 					</p>
 				</div>
 
@@ -53,8 +53,9 @@ function Services () {
 					/>
 					<h3 className="heading-3 heading-3--dark">UX/UI Design</h3>
 					<p className="service__text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit.
+						Before I start coding a project, I emplement UX/UI
+						design and plan for everything, then I know what I'm
+						coding.
 					</p>
 				</div>
 
@@ -69,8 +70,8 @@ function Services () {
 						Web Accessibility
 					</h3>
 					<p className="service__text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit.
+						Able to meet the W3C minimum Accessibility requirements
+						to make my websites accessible to disabled users.
 					</p>
 				</div>
 
@@ -83,8 +84,8 @@ function Services () {
 					/>
 					<h3 className="heading-3 heading-3--dark">SEO</h3>
 					<p className="service__text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit.
+						I know how to use HTML tools to apply website SEO best
+						practices and boost search engine ranking.
 					</p>
 				</div>
 
@@ -97,8 +98,8 @@ function Services () {
 					/>
 					<h3 className="heading-3">DIGITAL MARKETING</h3>
 					<p className="service__text">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit.
+						Able to emplement various Digital Marketing techniques
+						to boost website traffic and target desired audiences.
 					</p>
 				</div>
 			</section>

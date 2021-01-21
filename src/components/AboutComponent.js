@@ -21,13 +21,17 @@ function About () {
 					self-motivated web developer. I taught myself how to code
 					using various online learning platforms. I followed a strict
 					logical curriculum that I build for my self after doing an
-					extensive research on learning web development. <br />
+					extensive research on learning web development.{' '}
+				</p>
+				<p className="home__text">
 					When I first decided to go into web development it was back
 					in January 2019. My first career was IT Support Technician
 					and it did not really fulfill me. The moment I started with
 					web development, I immediately fell in love with it, and my
 					creative side awoke. I have been at it since then and I've
-					never been more happier and focused with what I do. <br />
+					never been more happier and focused with what I do.
+				</p>
+				<p className="home__text">
 					I love challenging myself, am hard working, good at problem
 					solving, able to work in a team or alone and I love my
 					coffee. I have personal projects that I started, run and
