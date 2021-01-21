@@ -4,47 +4,65 @@ import IcomoonReact from 'icomoon-react';
 import axios from 'axios';
 
 class Contact extends Component {
-	constructor (props) {
-		super(props);
-		this.state = {
+	state = {
+		name: '',
+		email: '',
+		message: '',
+		sent: false
+	};
+
+	handleName = (e) => {
+		this.setState({ name: e.target.value });
+	};
+
+	handleEmail = (e) => {
+		this.setState({ email: e.target.value });
+	};
+
+	handleMessage = (e) => {
+		this.setState({ message: e.target.value });
+	};
+
+	formSubmit = (e) => {
+		e.preventDefault();
+
+		let data = {
+			name: this.state.name,
+			email: this.state.email,
+			message: this.state.message
+		};
+
+		axios({
+			method: 'POST',
+			url: '/api/forma',
+			data: data
+		})
+			.then((response) => {
+				this.setState(
+					{
+						sent: true
+					},
+					this.resetForm()
+				);
+			})
+			.catch(() => {
+				console.log('Message not sent');
+			});
+	};
+
+	resetForm = () => {
+		this.setState({
 			name: '',
 			email: '',
 			message: ''
-		};
-
-		this.onNameChange = this.onNameChange.bind(this);
-		this.onEmailChange = this.onEmailChange.bind(this);
-		this.onMsgChange = this.onMsgChange.bind(this);
-	}
-
-	onNameChange (event) {
-		this.setState({ name: event.target.value });
-	}
-	onEmailChange (event) {
-		this.setState({ email: event.target.value });
-	}
-	onMsgChange (event) {
-		this.setState({ message: event.target.value });
-	}
-
-	submitEmail (e) {
-		e.preventDefault();
-		axios({
-			method: 'POST',
-			url: '/send',
-			data: this.state
-		}).then((response) => {
-			if (response.data.status === 'success') {
-				alert('Message Sent.');
-				this.resetForm();
-			} else if (response.data.status === 'fail') {
-				alert('Message failed to send.');
-			}
 		});
-	}
-	resetForm () {
-		this.setState({ name: '', email: '', subject: '', message: '' });
-	}
+
+		setTimeout(() => {
+			this.setState({
+				sent: false
+			});
+		}, 3000);
+	};
 
 	render () {
 		return (
@@ -104,8 +122,7 @@ class Contact extends Component {
 					<form
 						id="contact-form"
 						className="form"
-						onSubmit={this.submitEmail}
-						method="POST"
+						onSubmit={this.formSubmit}
 					>
 						<div className="form__group">
 							<input
@@ -116,7 +133,7 @@ class Contact extends Component {
 								placeholder="Name"
 								required
 								value={this.state.name}
-								onChange={this.onNameChange}
+								onChange={this.handleName}
 							/>
 							<label htmlFor="name" className="form__label">
 								Name
@@ -131,7 +148,7 @@ class Contact extends Component {
 								placeholder="Email"
 								required
 								value={this.state.email}
-								onChange={this.onEmailChange}
+								onChange={this.handleEmail}
 							/>
 							<label htmlFor="name" className="form__label">
 								Email
@@ -146,14 +163,27 @@ class Contact extends Component {
 								rows="8"
 								required
 								value={this.state.message}
-								onChange={this.onMsgChange}
+								onChange={this.handleMessage}
 							/>
 							<label htmlFor="message" className="form__label">
 								Message
 							</label>
 						</div>
+						<div
+							className={
+								this.state.sent ? (
+									'form__msg form__msg--appear'
+								) : (
+									'form__msg'
+								)
+							}
+						>
+							Message has been sent! I will get back to you soon.
+						</div>
 						<div className="form__group">
-							<button className="btn">Send message</button>
+							<button type="submit" className="btn">
+								Send message
+							</button>
 						</div>
 					</form>
 				</div>
