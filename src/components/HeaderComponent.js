@@ -19,6 +19,8 @@ function Header () {
 							src="logo.png"
 							alt="Mnqobi's logo"
 							className="navigation__logo"
+							loading="lazy"
+							title="logo"
 						/>
 						<p className="navigation__title">
 							<span className="color-accent">&lt;</span> mnqobi{' '}

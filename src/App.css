@@ -220,10 +220,32 @@
 .home__picture {
 	grid-column: col-start 5 / center-end;
 	padding: 4rem;
+
+	display: grid;
+	align-content: center;
+	justify-items: center;
 }
 
 .home__img {
 	width: 100%;
+}
+
+@media only screen and (max-width: 50em) {
+	.home__content {
+		grid-column: 1 / -1;
+		padding: 3rem;
+		margin-top: 1rem;
+	}
+
+	.home__picture {
+		grid-column: 1 / -1;
+		padding: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.home__img {
+		width: 60%;
+	}
 }
 
 /* AboutComponent Start */
@@ -245,11 +267,27 @@
 
 	display: grid;
 	align-content: center;
-	justify-items: start;
+	justify-items: center;
 }
 
 .about__img {
 	width: 100%;
+}
+
+@media only screen and (max-width: 50em) {
+	.about__content {
+		grid-column: 1 / -1;
+		padding: 3rem;
+		margin-bottom: 1rem;
+	}
+	.about__picture {
+		grid-column: 1 / -1;
+		padding: 3rem;
+		margin-top: 1rem;
+	}
+	.about__img {
+		width: 50%;
+	}
 }
 
 /* ServicesComponent Start */
@@ -427,7 +465,7 @@
 
 	display: grid;
 	align-content: center;
-	justify-items: start;
+	justify-items: center;
 }
 
 .contact__content {
@@ -458,8 +496,8 @@
 }
 
 .contact__icon {
-	width: 4rem;
-	height: 4rem;
+	width: 3rem;
+	height: 3rem;
 	margin-right: 1rem;
 	background-color: var(--color-primary);
 	padding: .75rem;
@@ -541,6 +579,27 @@
 
 .form__msg--appear {
 	display: block;
+}
+
+@media only screen and (max-width: 50em) {
+	.contact__picture {
+		grid-column: 1 / -1;
+		padding: 3rem;
+		margin-top: 1rem;
+	}
+	.contact__content {
+		grid-column: 1 / -1;
+		padding: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.contact__img {
+		width: 70%;
+	}
+
+	.form__btn {
+		width: 100%;
+	}
 }
 
 /* FooterComponent Start */

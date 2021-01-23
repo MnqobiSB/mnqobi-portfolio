@@ -24,6 +24,8 @@ function Home () {
 					src="front-end-developer.svg"
 					alt="Front end developer guy"
 					className="home__img"
+					loading="lazy"
+					title="Front end developer guy"
 				/>
 			</div>
 		</div>

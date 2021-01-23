@@ -11,6 +11,8 @@ function Footer () {
 					src="logo.png"
 					alt="Mnqobi's logo"
 					className="footer__logo"
+					loading="lazy"
+					title="Logo"
 				/>
 				<ul className="footer__nav">
 					<li className="footer__nav-item">

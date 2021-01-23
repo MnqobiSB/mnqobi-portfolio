@@ -181,7 +181,7 @@ class Contact extends Component {
 							Message has been sent! I will get back to you soon.
 						</div>
 						<div className="form__group">
-							<button type="submit" className="btn">
+							<button type="submit" className="btn form__btn">
 								Send message
 							</button>
 						</div>
