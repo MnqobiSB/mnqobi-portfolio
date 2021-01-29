@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import iconSet from '../icomoon/selection.json';
 import IcomoonReact from 'icomoon-react';
 
@@ -16,40 +15,60 @@ function Footer () {
 				/>
 				<ul className="footer__nav">
 					<li className="footer__nav-item">
-						<Link to="#" className="footer__nav-link">
+						<a
+							href="https://github.com/MnqobiSB"
+							className="footer__nav-link"
+							target="_blank"
+							rel="noreferrer"
+						>
 							<IcomoonReact
 								className="footer__nav-icon"
 								iconSet={iconSet}
 								icon="github"
 							/>
-						</Link>
+						</a>
 					</li>
 					<li className="footer__nav-item">
-						<Link to="#" className="footer__nav-link">
+						<a
+							href="http://linkedin.com/in/mnqobi-mzolo-4986691a6"
+							className="footer__nav-link"
+							target="_blank"
+							rel="noreferrer"
+						>
 							<IcomoonReact
 								className="footer__nav-icon"
 								iconSet={iconSet}
 								icon="linkedin"
 							/>
-						</Link>
+						</a>
 					</li>
 					<li className="footer__nav-item">
-						<Link to="#" className="footer__nav-link">
+						<a
+							href="https://twitter.com/MnqobiSb"
+							className="footer__nav-link"
+							target="_blank"
+							rel="noreferrer"
+						>
 							<IcomoonReact
 								className="footer__nav-icon"
 								iconSet={iconSet}
 								icon="twitter"
 							/>
-						</Link>
+						</a>
 					</li>
 					<li className="footer__nav-item">
-						<Link to="#" className="footer__nav-link">
+						<a
+							href="https://codepen.io/dev_mnqobi"
+							className="footer__nav-link"
+							target="_blank"
+							rel="noreferrer"
+						>
 							<IcomoonReact
 								className="footer__nav-icon"
 								iconSet={iconSet}
-								icon="facebook"
+								icon="codepen"
 							/>
-						</Link>
+						</a>
 					</li>
 				</ul>
 

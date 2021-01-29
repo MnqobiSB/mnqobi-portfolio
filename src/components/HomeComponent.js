@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FadeTransform, Fade } from 'react-animation-components';
+import { FadeTransform } from 'react-animation-components';
 
 function Home () {
 	return (
@@ -28,7 +28,12 @@ function Home () {
 			</div>
 
 			<div className="home__picture">
-				<Fade in>
+				<FadeTransform
+					in
+					transformProps={{
+						exitTransform: 'scale(0.5) translatex(50%)'
+					}}
+				>
 					<img
 						src="front-end-developer.svg"
 						alt="Front end developer guy"
@@ -36,7 +41,7 @@ function Home () {
 						loading="lazy"
 						title="Front end developer guy"
 					/>
-				</Fade>
+				</FadeTransform>
 			</div>
 		</div>
 	);

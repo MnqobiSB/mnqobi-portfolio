@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 function Header () {
 	const [ checked, setChecked ] = React.useState(false);
@@ -14,7 +14,7 @@ function Header () {
 		<div className="container">
 			<div className="navigation">
 				<div className="navigation__container">
-					<div className="navigation__logo-box">
+					<Link to="/home" className="navigation__logo-box homeBtn">
 						<img
 							src="logo.png"
 							alt="Mnqobi's logo"
@@ -26,7 +26,7 @@ function Header () {
 							<span className="color-accent">&lt;</span> mnqobi{' '}
 							<span className="color-accent">&frasl;&gt;</span>
 						</p>
-					</div>
+					</Link>
 
 					<input
 						type="checkbox"

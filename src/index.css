@@ -81,11 +81,11 @@ body {
 	}
 }
 
-@media only screen and (max-width: var(--bp-medium)) {
+/* @media only screen and (max-width: 50em) {
 	.container {
 		grid-template-rows: 6rem calc(100vh - 6rem);
 	}
-}
+} */
 
 .mb-sm {
 	margin-bottom: 2rem;
@@ -180,6 +180,22 @@ body {
 	font-size: 2rem;
 	color: var(color-primary);
 	text-transform: uppercase;
+}
+
+.heading-1--page-heading {
+	margin-top: 4rem;
+}
+
+.heading-1--page-heading,
+.heading-2--page-heading {
+	grid-column: center-start/center-end;
+}
+
+@media only screen and (max-width: 50em) {
+	.heading-1--page-heading,
+	.heading-2--page-heading {
+		text-align: center;
+	}
 }
 
 .home__text {
