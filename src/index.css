@@ -111,6 +111,7 @@ body {
 	text-decoration: none;
 	background-color: var(--color-primary);
 	color: var(--color-grey-light-1);
+	display: inline-block;
 	padding: 1.25rem 4rem;
 	border-radius: 3px;
 	border: 0;
@@ -184,7 +185,6 @@ body {
 .home__text {
 	font-size: 1.7rem;
 	font-style: italic;
-	margin-bottom: 4rem;
 }
 
 .active {

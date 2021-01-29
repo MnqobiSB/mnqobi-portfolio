@@ -1,4 +1,4 @@
-/* MAIN NAV */
+/* HeaderComonent Start*/
 .navigation {
 	grid-column: full-start / full-end;
 	background-color: var(--color-dark);
@@ -205,12 +205,11 @@
 	}
 }
 
-/* projectComponent Start */
-
+/* HomeComponent Start */
 .home__content {
 	grid-column: center-start / col-end 4;
 	align-items: center;
-	padding: 4vw;
+	padding: 4rem;
 
 	display: grid;
 	align-content: center;
@@ -219,7 +218,7 @@
 
 .home__picture {
 	grid-column: col-start 5 / center-end;
-	padding: 4rem;
+	padding: 8rem;
 
 	display: grid;
 	align-content: center;
@@ -233,28 +232,27 @@
 @media only screen and (max-width: 50em) {
 	.home__content {
 		grid-column: 1 / -1;
-		padding: 3rem;
+		padding: 2rem;
 		margin-top: 1rem;
 	}
 
 	.home__picture {
 		grid-column: 1 / -1;
-		padding: 3rem;
+		padding: 4rem;
 		margin-bottom: 1rem;
 	}
 
 	.home__img {
-		width: 60%;
+		width: 50%;
 	}
 }
 
 /* AboutComponent Start */
-
 .about__content {
 	grid-column: col-start 4 / center-end;
 
 	align-items: center;
-	padding: 4vw;
+	padding: 4rem;
 
 	display: grid;
 	align-content: center;
@@ -290,20 +288,20 @@
 	}
 }
 
-/* ServicesComponent Start */
-.heading-1--skills-heading {
-	margin-top: 6rem;
+/* SkillsComponent Start */
+.heading-1--page-heading {
+	margin-top: 4rem;
 }
 
-.heading-1--skills-heading,
-.heading-2--skills-heading {
+.heading-1--page-heading,
+.heading-2--page-heading {
 	grid-column: center-start/center-end;
 }
 
 .skills {
 	grid-column: center-start/center-end;
 
-	margin: 6rem 0;
+	margin: 4rem 0;
 
 	display: grid;
 	/* grid-template-columns: repeat(3, 1fr); */
@@ -330,16 +328,7 @@
 	font-size: 1.7rem;
 }
 
-/* SkillsComponent Start */
-.heading-1--services-heading {
-	margin-top: 6rem;
-}
-
-.heading-1--services-heading,
-.heading-2--services-heading {
-	grid-column: center-start/center-end;
-}
-
+/* ServicesComponent Start */
 .services {
 	grid-column: center-start/center-end;
 
@@ -635,12 +624,12 @@
 	justify-items: center;
 }
 .footer__nav-icon {
-	width: 2.4rem;
+	width: 2rem;
 }
 .copyright {
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 	color: var(--color-grey-light-2);
-	margin-top: 3rem;
+	margin-top: 2rem;
 	text-align: center;
 }
 .copyright__bull {
@@ -649,7 +638,7 @@
 	margin: 0 .5rem;
 }
 .copyright__heart {
-	font-size: 2rem;
+	font-size: 1.6rem;
 	color: red;
 	margin: 0 .5rem;
 }

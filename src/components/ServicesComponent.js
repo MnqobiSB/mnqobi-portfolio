@@ -5,10 +5,10 @@ import IcomoonReact from 'icomoon-react';
 function Services () {
 	return (
 		<div className="container">
-			<h1 className="heading-1 heading-1--services-heading mb-md">
+			<h1 className="heading-1 heading-1--page-heading mb-md">
 				My services
 			</h1>
-			<h2 className="heading-2 heading-2--services-heading mb-sm">
+			<h2 className="heading-2 heading-2--page-heading mb-sm">
 				Things I can do
 			</h2>
 			<section className="services">

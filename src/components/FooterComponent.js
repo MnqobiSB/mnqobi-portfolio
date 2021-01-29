@@ -55,7 +55,7 @@ function Footer () {
 
 				<p className="copyright">
 					&copy; Copyright 2021{' '}
-					<span className="copyright__bull">&bull;</span> Amandla's
+					<span className="copyright__bull">&bull;</span> Mnqobi's
 					Portfolio <span className="copyright__bull">
 						&bull;
 					</span>{' '}
@@ -66,7 +66,7 @@ function Footer () {
 					Made with <span className="copyright__heart">
 						&hearts;
 					</span>{' '}
-					by Amandla.
+					by Mnqobi.
 				</p>
 			</footer>
 		</div>

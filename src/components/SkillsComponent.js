@@ -1,121 +1,150 @@
 import React from 'react';
 import iconSet from '../icomoon/selection.json';
 import IcomoonReact from 'icomoon-react';
+import { FadeTransform, Fade } from 'react-animation-components';
 
 function Skills () {
 	return (
 		<div className="container">
-			<h1 className="heading-1 heading-1--skills-heading mb-md">
-				My skills
+			<h1 className="heading-1 heading-1--page-heading mb-sm">
+				<FadeTransform
+					in
+					transformProps={{
+						exitTransform: 'scale(0.5) translatex(-50%)'
+					}}
+				>
+					My skills
+				</FadeTransform>
 			</h1>
-			<h2 className="heading-2 heading-2--skills-heading mb-sm">
-				Skills that I have learned so far
+
+			<h2 className="heading-2 heading-2--page-heading mb-md">
+				<Fade in>Skills that I have learned so far</Fade>
 			</h2>
+
 			<section className="skills">
-				<div className="skill">
-					<IcomoonReact
-						className="skill__icon"
-						iconSet={iconSet}
-						icon="html-five"
-						color="#e34c26"
-					/>
-					<h3 className="heading-3 heading-3--dark">HTML5</h3>
-					<p className="skill__text">
-						Competent in HTML5. Able to apply it semantically to
-						improve accessibility and SEO.
-					</p>
-				</div>
+				<Fade in>
+					<div className="skill">
+						<IcomoonReact
+							className="skill__icon"
+							iconSet={iconSet}
+							icon="html-five"
+							color="#e34c26"
+						/>
+						<h3 className="heading-3 heading-3--dark">HTML5</h3>
+						<p className="skill__text">
+							Competent in HTML5. Able to apply it semantically to
+							improve accessibility and SEO.
+						</p>
+					</div>
+				</Fade>
 
-				<div className="skill">
-					<IcomoonReact
-						className="skill__icon"
-						iconSet={iconSet}
-						icon="css3"
-					/>
-					<h3 className="heading-3 heading-3--dark">CSS3</h3>
-					<p className="skill__text">
-						Able to code different layouts and apply advanced
-						techniques to style a page the way I want.
-					</p>
-				</div>
+				<Fade in>
+					<div className="skill">
+						<IcomoonReact
+							className="skill__icon"
+							iconSet={iconSet}
+							icon="css3"
+						/>
+						<h3 className="heading-3 heading-3--dark">CSS3</h3>
+						<p className="skill__text">
+							Able to code different layouts and apply advanced
+							techniques to style a page the way I want.
+						</p>
+					</div>
+				</Fade>
 
-				<div className="skill">
-					<IcomoonReact
-						className="skill__icon"
-						iconSet={iconSet}
-						icon="javascript"
-					/>
-					<h3 className="heading-3 heading-3--dark">JavaScript</h3>
-					<p className="skill__text">
-						Able to use JavaScript tools to solve software problems.
-						Competent in vanilla JS, ES6 and JS libraries.
-					</p>
-				</div>
+				<Fade in>
+					<div className="skill">
+						<IcomoonReact
+							className="skill__icon"
+							iconSet={iconSet}
+							icon="javascript"
+						/>
+						<h3 className="heading-3 heading-3--dark">
+							JavaScript
+						</h3>
+						<p className="skill__text">
+							Able to use JavaScript tools to solve software
+							problems. Competent in vanilla JS, ES6 and JS
+							libraries.
+						</p>
+					</div>
+				</Fade>
 
-				<div className="skill">
-					<IcomoonReact
-						className="skill__icon"
-						iconSet={iconSet}
-						icon="bootstrap"
-					/>
-					<h3 className="heading-3 heading-3--dark">Bootstrap</h3>
-					<p className="skill__text">
-						Able to use the Bootstrap library to build various
-						layouts and functionality.
-					</p>
-				</div>
+				<Fade in>
+					<div className="skill">
+						<IcomoonReact
+							className="skill__icon"
+							iconSet={iconSet}
+							icon="bootstrap"
+						/>
+						<h3 className="heading-3 heading-3--dark">Bootstrap</h3>
+						<p className="skill__text">
+							Able to use the Bootstrap library to build various
+							layouts and functionality.
+						</p>
+					</div>
+				</Fade>
 
-				<div className="skill">
-					<IcomoonReact
-						className="skill__icon"
-						iconSet={iconSet}
-						icon="sass"
-					/>
-					<h3 className="heading-3 heading-3--dark">SASS</h3>
-					<p className="skill__text">
-						Able to use Sass tools to make coding CSS managable,
-						maintainabel and easy to scale.
-					</p>
-				</div>
+				<Fade in>
+					<div className="skill">
+						<IcomoonReact
+							className="skill__icon"
+							iconSet={iconSet}
+							icon="sass"
+						/>
+						<h3 className="heading-3 heading-3--dark">SASS</h3>
+						<p className="skill__text">
+							Able to use Sass tools to make coding CSS managable,
+							maintainable and easy to scale.
+						</p>
+					</div>
+				</Fade>
 
-				<div className="skill">
-					<IcomoonReact
-						className="skill__icon"
-						iconSet={iconSet}
-						icon="react"
-					/>
-					<h3 className="heading-3">REACT</h3>
-					<p className="skill__text">
-						Compete with React. Able to use React tools and best
-						practices to build cool web apps &amp; SPA's.
-					</p>
-				</div>
+				<Fade in>
+					<div className="skill">
+						<IcomoonReact
+							className="skill__icon"
+							iconSet={iconSet}
+							icon="react"
+						/>
+						<h3 className="heading-3">REACT</h3>
+						<p className="skill__text">
+							Compete with React. Able to use React tools and best
+							practices to build cool web apps &amp; SPA's.
+						</p>
+					</div>
+				</Fade>
 
-				<div className="skill">
-					<IcomoonReact
-						className="skill__icon"
-						iconSet={iconSet}
-						icon="node-dot-js"
-					/>
-					<h3 className="heading-3">NODE.JS</h3>
-					<p className="skill__text">
-						Enjoy using Node.JS in my applications, because I
-						understand well and find it easy to emplement.
-					</p>
-				</div>
+				<Fade in>
+					<div className="skill">
+						<IcomoonReact
+							className="skill__icon"
+							iconSet={iconSet}
+							icon="node-dot-js"
+						/>
+						<h3 className="heading-3">NODE.JS</h3>
+						<p className="skill__text">
+							Enjoy using Node.JS in my applications, because I
+							understand well and find it easy to work with.
+						</p>
+					</div>
+				</Fade>
 
-				<div className="skill">
-					<IcomoonReact
-						className="skill__icon"
-						iconSet={iconSet}
-						icon="npm"
-					/>
-					<h3 className="heading-3">NPM</h3>
-					<p className="skill__text">
-						I enjoy working with the JS stack and NPM is an
-						important part to my work-flow.
-					</p>
-				</div>
+				<Fade in>
+					<div className="skill">
+						<IcomoonReact
+							className="skill__icon"
+							iconSet={iconSet}
+							icon="npm"
+						/>
+						<h3 className="heading-3">NPM</h3>
+						<p className="skill__text">
+							I enjoy working with the JS stack and NPM is an
+							important part of my work-flow.
+						</p>
+					</div>
+				</Fade>
 
 				<div className="skill">
 					<IcomoonReact
