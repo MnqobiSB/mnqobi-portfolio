@@ -22,7 +22,7 @@ function Home () {
 						Welcome to my personal portfolio!
 					</p>
 					<Link to="/contact-me" className="btn">
-						Hire me &rarr;
+						Work with me &rarr;
 					</Link>
 				</FadeTransform>
 			</div>

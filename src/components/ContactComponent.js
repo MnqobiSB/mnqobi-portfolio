@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import iconSet from '../icomoon/selection.json';
 import IcomoonReact from 'icomoon-react';
 import axios from 'axios';
+import { FadeTransform, Fade } from 'react-animation-components';
 
 class Contact extends Component {
 	state = {
@@ -67,18 +68,27 @@ class Contact extends Component {
 	render () {
 		return (
 			<div className="container">
-				<h1 className="heading-1 heading-1--services-heading mb-md">
-					Contact me
+				<h1 className="heading-1 heading-1--page-heading mb-sm">
+					<FadeTransform
+						in
+						transformProps={{
+							exitTransform: 'scale(0.5) translatex(-50%)'
+						}}
+					>
+						Contact me
+					</FadeTransform>
 				</h1>
-				<h2 className="heading-2 heading-2--services-heading mb-sm">
-					Do you want to work with me? Get in-touch
+				<h2 className="heading-2 heading-2--page-heading mb-md">
+					<Fade in>Do you want to work with me? Get in-touch</Fade>
 				</h2>
 
 				<div className="contact__picture">
 					<img
 						src="contact-1.svg"
-						alt="Contact illustration"
+						alt="Contact me illustration"
 						className="contact__img"
+						loading="lazy"
+						title="Contact me illustration"
 					/>
 				</div>
 
@@ -86,12 +96,12 @@ class Contact extends Component {
 					<h3 className="heading-3 heading-3--dark mb-sm">
 						Contact details
 					</h3>
-					<p className="home__text">
+					<p className="home__text mb-sm">
 						<span className="contact__items">
 							<IcomoonReact
 								className="contact__icon"
 								iconSet={iconSet}
-								icon="mobile"
+								icon="phone"
 								color="#faf9f9"
 							/>
 							<a
@@ -105,7 +115,7 @@ class Contact extends Component {
 							<IcomoonReact
 								className="contact__icon"
 								iconSet={iconSet}
-								icon="mail"
+								icon="envelope"
 								color="#faf9f9"
 							/>
 							<a

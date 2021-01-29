@@ -76,6 +76,21 @@ function Skills () {
 						<IcomoonReact
 							className="skill__icon"
 							iconSet={iconSet}
+							icon="jquery"
+						/>
+						<h3 className="heading-3 heading-3--dark">JQuery</h3>
+						<p className="skill__text">
+							Able to use JQuery tools to solve software problems
+							when I need to.
+						</p>
+					</div>
+				</Fade>
+
+				<Fade in>
+					<div className="skill">
+						<IcomoonReact
+							className="skill__icon"
+							iconSet={iconSet}
 							icon="bootstrap"
 						/>
 						<h3 className="heading-3 heading-3--dark">Bootstrap</h3>
@@ -131,20 +146,31 @@ function Skills () {
 					</div>
 				</Fade>
 
-				<Fade in>
-					<div className="skill">
-						<IcomoonReact
-							className="skill__icon"
-							iconSet={iconSet}
-							icon="npm"
-						/>
-						<h3 className="heading-3">NPM</h3>
-						<p className="skill__text">
-							I enjoy working with the JS stack and NPM is an
-							important part of my work-flow.
-						</p>
-					</div>
-				</Fade>
+				<div className="skill">
+					<IcomoonReact
+						className="skill__icon"
+						iconSet={iconSet}
+						icon="mongodb"
+					/>
+					<h3 className="heading-3">Mongo DB</h3>
+					<p className="skill__text">
+						Enjoy using MongoDB in my applications, because I find
+						it an easy solution for my database needs.
+					</p>
+				</div>
+
+				<div className="skill">
+					<IcomoonReact
+						className="skill__icon"
+						iconSet={iconSet}
+						icon="npm"
+					/>
+					<h3 className="heading-3">NPM</h3>
+					<p className="skill__text">
+						I enjoy working with the JS stack and NPM is an
+						important part of my work-flow.
+					</p>
+				</div>
 
 				<div className="skill">
 					<IcomoonReact
@@ -154,8 +180,8 @@ function Skills () {
 					/>
 					<h3 className="heading-3">YARN</h3>
 					<p className="skill__text">
-						I sometimes use Yarn to manage my packages. I like use
-						to when I'm working with React.
+						I sometimes use Yarn to manage my packages. I like to
+						use it when I'm working with React.
 					</p>
 				</div>
 
@@ -167,8 +193,23 @@ function Skills () {
 					/>
 					<h3 className="heading-3">GIT</h3>
 					<p className="skill__text">
-						Git/Github are very important tool for any developer's
-						workflow. I understand Git and use it in my projects.
+						Git is very important tool for managing version control
+						and workflow. I understand Git and use it in my
+						projects.
+					</p>
+				</div>
+
+				<div className="skill">
+					<IcomoonReact
+						className="skill__icon"
+						iconSet={iconSet}
+						icon="github"
+					/>
+					<h3 className="heading-3">GITHUB</h3>
+					<p className="skill__text">
+						I use github along with git to host my source code and
+						also leverage the extra features like github pages and
+						open source.
 					</p>
 				</div>
 
@@ -178,10 +219,10 @@ function Skills () {
 						iconSet={iconSet}
 						icon="gulp"
 					/>
-					<h3 className="heading-3">GRUNT</h3>
+					<h3 className="heading-3">Gulp</h3>
 					<p className="skill__text">
-						I find Grunt easy to emplement as my task runner when I
-						need to run a tast runner in my projects.
+						I find Gulp easy to emplement as my task runner when I
+						need to run a task runner in my projects.
 					</p>
 				</div>
 
@@ -207,7 +248,7 @@ function Skills () {
 					<h3 className="heading-3">VS CODE</h3>
 					<p className="skill__text">
 						VS Code is my favourite code editor because it has great
-						tools that boost developer work-flow.
+						tools that boost development work-flow.
 					</p>
 				</div>
 
@@ -221,19 +262,6 @@ function Skills () {
 					<p className="skill__text">
 						I use Figma design mark-ups &amp; prototypes for my
 						projects before I start coding them.
-					</p>
-				</div>
-
-				<div className="skill">
-					<IcomoonReact
-						className="skill__icon"
-						iconSet={iconSet}
-						icon="wordpress"
-					/>
-					<h3 className="heading-3">WORDPRESS</h3>
-					<p className="skill__text">
-						I sometimes use WordPress to achieve certain goals and
-						for clients that ask for it.
 					</p>
 				</div>
 			</section>

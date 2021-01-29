@@ -1,223 +1,243 @@
 import React from 'react';
 import iconSet from '../icomoon/selection.json';
 import IcomoonReact from 'icomoon-react';
+import { FadeTransform, Fade } from 'react-animation-components';
 
 function Work () {
 	return (
 		<div className="container">
-			<h1 className="heading-1 heading-1--services-heading mb-md">
-				My work
+			<h1 className="heading-1 heading-1--page-heading mb-sm">
+				<FadeTransform
+					in
+					transformProps={{
+						exitTransform: 'scale(0.5) translatex(-50%)'
+					}}
+				>
+					My work
+				</FadeTransform>
 			</h1>
-			<h2 className="heading-2 heading-2--services-heading mb-sm">
-				Projects that I have built
+			<h2 className="heading-2 heading-2--page-heading mb-md">
+				<Fade in>Projects I have built</Fade>
 			</h2>
 
 			<section className="projects">
-				<div className="project">
-					<img
-						src="natours.PNG"
-						alt="Natours Project"
-						className="project__img"
-						loading="lazy"
-						title="Natours Project"
-					/>
-					<h3 className="project__name heading-3">Natours Website</h3>
-					<div className="project__technology project__technology--top">
-						<IcomoonReact
-							className="svg"
-							iconSet={iconSet}
-							icon="html-five"
-							color="#e34c26"
+				<Fade in>
+					<div className="project">
+						<img
+							src="natours.PNG"
+							alt="Natours Project"
+							className="project__img"
+							loading="lazy"
+							title="Natours Project"
 						/>
-						<p>HTML5</p>
-					</div>
-					<div className="project__technology project__technology--top">
-						<IcomoonReact
-							className="svg"
-							iconSet={iconSet}
-							icon="css3"
-						/>
-						<p>CSS3</p>
-					</div>
-					<div className="project__technology">
-						<IcomoonReact
-							className="svg"
-							iconSet={iconSet}
-							icon="javascript"
-						/>
-						<p>JavaScript</p>
-					</div>
-					<div className="project__technology">
-						<IcomoonReact
-							className="svg"
-							iconSet={iconSet}
-							icon="sass"
-						/>
-						<p>Sass</p>
-					</div>
-					<div className="project__buttons">
-						<a
-							href="https://github.com/MnqobiSB/natours-sass-project"
-							className="project__btn"
-							target="_blank"
-							rel="noreferrer"
-						>
+						<h3 className="project__name heading-3">
+							Natours Website
+						</h3>
+						<div className="project__technology project__technology--top">
 							<IcomoonReact
 								className="svg"
 								iconSet={iconSet}
-								icon="github"
-								color="#000"
+								icon="html-five"
+								color="#e34c26"
 							/>
-							View Code
-						</a>
-						<a
-							href="https://mnqobisb.github.io/natours-sass-project/"
-							className="project__btn"
-							target="_blank"
-							rel="noreferrer"
-						>
+							<p>HTML5</p>
+						</div>
+						<div className="project__technology project__technology--top">
 							<IcomoonReact
 								className="svg"
 								iconSet={iconSet}
-								icon="compass"
-								color="#000"
+								icon="css3"
 							/>
-							Live Demo
-						</a>
+							<p>CSS3</p>
+						</div>
+						<div className="project__technology">
+							<IcomoonReact
+								className="svg"
+								iconSet={iconSet}
+								icon="javascript"
+							/>
+							<p>JavaScript</p>
+						</div>
+						<div className="project__technology">
+							<IcomoonReact
+								className="svg"
+								iconSet={iconSet}
+								icon="sass"
+							/>
+							<p>Sass</p>
+						</div>
+						<div className="project__buttons">
+							<a
+								href="https://github.com/MnqobiSB/natours-sass-project"
+								className="project__btn"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<IcomoonReact
+									className="svg"
+									iconSet={iconSet}
+									icon="github"
+									color="#000"
+								/>
+								View Code
+							</a>
+							<a
+								href="https://mnqobisb.github.io/natours-sass-project/"
+								className="project__btn"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<IcomoonReact
+									className="svg"
+									iconSet={iconSet}
+									icon="paper-plane"
+									color="#000"
+								/>
+								Live Demo
+							</a>
+						</div>
 					</div>
-				</div>
+				</Fade>
 
-				<div className="project">
-					<img
-						src="trillo.PNG"
-						alt="Trillo Project"
-						className="project__img"
-						loading="lazy"
-						title="Trillo Project"
-					/>
-					<h3 className="project__name heading-3">Trillo Website</h3>
-					<div className="project__technology project__technology--top">
-						<IcomoonReact
-							className="svg"
-							iconSet={iconSet}
-							icon="html-five"
-							color="#e34c26"
+				<Fade in>
+					<div className="project">
+						<img
+							src="trillo.PNG"
+							alt="Trillo Project"
+							className="project__img"
+							loading="lazy"
+							title="Trillo Project"
 						/>
-						<p>HTML5</p>
-					</div>
-					<div className="project__technology project__technology--top">
-						<IcomoonReact
-							className="svg"
-							iconSet={iconSet}
-							icon="css3"
-						/>
-						<p>CSS3</p>
-					</div>
-					<div className="project__technology">
-						<IcomoonReact
-							className="svg"
-							iconSet={iconSet}
-							icon="sass"
-						/>
-						<p>Sass</p>
-					</div>
-					<div className="project__buttons">
-						<a
-							href="https://github.com/MnqobiSB/trillo-project-css-flexbox"
-							className="project__btn"
-							target="_blank"
-							rel="noreferrer"
-						>
+						<h3 className="project__name heading-3">
+							Trillo Website
+						</h3>
+						<div className="project__technology project__technology--top">
 							<IcomoonReact
 								className="svg"
 								iconSet={iconSet}
-								icon="github"
-								color="#000"
+								icon="html-five"
+								color="#e34c26"
 							/>
-							View Code
-						</a>
-						<a
-							href="https://mnqobisb.github.io/trillo-project-css-flexbox/"
-							className="project__btn"
-							target="_blank"
-							rel="noreferrer"
-						>
+							<p>HTML5</p>
+						</div>
+						<div className="project__technology project__technology--top">
 							<IcomoonReact
 								className="svg"
 								iconSet={iconSet}
-								icon="compass"
-								color="#000"
+								icon="css3"
 							/>
-							Live Demo
-						</a>
+							<p>CSS3</p>
+						</div>
+						<div className="project__technology">
+							<IcomoonReact
+								className="svg"
+								iconSet={iconSet}
+								icon="sass"
+							/>
+							<p>Sass</p>
+						</div>
+						<div className="project__buttons">
+							<a
+								href="https://github.com/MnqobiSB/trillo-project-css-flexbox"
+								className="project__btn"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<IcomoonReact
+									className="svg"
+									iconSet={iconSet}
+									icon="github"
+									color="#000"
+								/>
+								View Code
+							</a>
+							<a
+								href="https://mnqobisb.github.io/trillo-project-css-flexbox/"
+								className="project__btn"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<IcomoonReact
+									className="svg"
+									iconSet={iconSet}
+									icon="paper-plane"
+									color="#000"
+								/>
+								Live Demo
+							</a>
+						</div>
 					</div>
-				</div>
+				</Fade>
 
-				<div className="project">
-					<img
-						src="nexter.PNG"
-						alt="Nexter Project"
-						className="project__img"
-						loading="lazy"
-						title="Nexter Project"
-					/>
-					<h3 className="project__name heading-3">Nexter Website</h3>
-					<div className="project__technology project__technology--top">
-						<IcomoonReact
-							className="svg"
-							iconSet={iconSet}
-							icon="html-five"
-							color="#e34c26"
+				<Fade in>
+					<div className="project">
+						<img
+							src="nexter.PNG"
+							alt="Nexter Project"
+							className="project__img"
+							loading="lazy"
+							title="Nexter Project"
 						/>
-						<p>HTML5</p>
-					</div>
-					<div className="project__technology project__technology--top">
-						<IcomoonReact
-							className="svg"
-							iconSet={iconSet}
-							icon="css3"
-						/>
-						<p>CSS3</p>
-					</div>
-					<div className="project__technology">
-						<IcomoonReact
-							className="svg"
-							iconSet={iconSet}
-							icon="sass"
-						/>
-						<p>Sass</p>
-					</div>
-					<div className="project__buttons">
-						<a
-							href="https://github.com/MnqobiSB/nexter-project-css-grid"
-							className="project__btn"
-							target="_blank"
-							rel="noreferrer"
-						>
+						<h3 className="project__name heading-3">
+							Nexter Website
+						</h3>
+						<div className="project__technology project__technology--top">
 							<IcomoonReact
 								className="svg"
 								iconSet={iconSet}
-								icon="github"
-								color="#000"
+								icon="html-five"
+								color="#e34c26"
 							/>
-							View Code
-						</a>
-						<a
-							href="https://mnqobisb.github.io/nexter-project-css-grid/"
-							className="project__btn"
-							target="_blank"
-							rel="noreferrer"
-						>
+							<p>HTML5</p>
+						</div>
+						<div className="project__technology project__technology--top">
 							<IcomoonReact
 								className="svg"
 								iconSet={iconSet}
-								icon="compass"
-								color="#000"
+								icon="css3"
 							/>
-							Live Demo
-						</a>
+							<p>CSS3</p>
+						</div>
+						<div className="project__technology">
+							<IcomoonReact
+								className="svg"
+								iconSet={iconSet}
+								icon="sass"
+							/>
+							<p>Sass</p>
+						</div>
+						<div className="project__buttons">
+							<a
+								href="https://github.com/MnqobiSB/nexter-project-css-grid"
+								className="project__btn"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<IcomoonReact
+									className="svg"
+									iconSet={iconSet}
+									icon="github"
+									color="#000"
+								/>
+								View Code
+							</a>
+							<a
+								href="https://mnqobisb.github.io/nexter-project-css-grid/"
+								className="project__btn"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<IcomoonReact
+									className="svg"
+									iconSet={iconSet}
+									icon="paper-plane"
+									color="#000"
+								/>
+								Live Demo
+							</a>
+						</div>
 					</div>
-				</div>
+				</Fade>
 
 				<div className="project">
 					<img
@@ -277,7 +297,7 @@ function Work () {
 							<IcomoonReact
 								className="svg"
 								iconSet={iconSet}
-								icon="compass"
+								icon="paper-plane"
 								color="#000"
 							/>
 							Live Demo
@@ -343,7 +363,7 @@ function Work () {
 							<IcomoonReact
 								className="svg"
 								iconSet={iconSet}
-								icon="compass"
+								icon="paper-plane"
 								color="#000"
 							/>
 							Live Demo
@@ -417,7 +437,7 @@ function Work () {
 							<IcomoonReact
 								className="svg"
 								iconSet={iconSet}
-								icon="compass"
+								icon="paper-plane"
 								color="#000"
 							/>
 							Live Demo
@@ -483,7 +503,7 @@ function Work () {
 							<IcomoonReact
 								className="svg"
 								iconSet={iconSet}
-								icon="compass"
+								icon="paper-plane"
 								color="#000"
 							/>
 							Live Demo
@@ -550,7 +570,7 @@ function Work () {
 							<IcomoonReact
 								className="svg"
 								iconSet={iconSet}
-								icon="compass"
+								icon="paper-plane"
 								color="#000"
 							/>
 							Live Demo
@@ -625,7 +645,7 @@ function Work () {
 							<IcomoonReact
 								className="svg"
 								iconSet={iconSet}
-								icon="compass"
+								icon="paper-plane"
 								color="#000"
 							/>
 							Live Demo
@@ -700,7 +720,7 @@ function Work () {
 							<IcomoonReact
 								className="svg"
 								iconSet={iconSet}
-								icon="compass"
+								icon="paper-plane"
 								color="#000"
 							/>
 							Live Demo
@@ -775,7 +795,7 @@ function Work () {
 							<IcomoonReact
 								className="svg"
 								iconSet={iconSet}
-								icon="compass"
+								icon="paper-plane"
 								color="#000"
 							/>
 							Live Demo
@@ -850,7 +870,7 @@ function Work () {
 							<IcomoonReact
 								className="svg"
 								iconSet={iconSet}
-								icon="compass"
+								icon="paper-plane"
 								color="#000"
 							/>
 							Live Demo
@@ -909,7 +929,7 @@ function Work () {
 							<IcomoonReact
 								className="svg"
 								iconSet={iconSet}
-								icon="compass"
+								icon="paper-plane"
 								color="#000"
 							/>
 							Live Demo

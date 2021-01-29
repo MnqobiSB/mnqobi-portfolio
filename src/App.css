@@ -234,6 +234,8 @@
 		grid-column: 1 / -1;
 		padding: 2rem;
 		margin-top: 1rem;
+		text-align: center;
+		justify-items: center;
 	}
 
 	.home__picture {
@@ -243,7 +245,7 @@
 	}
 
 	.home__img {
-		width: 50%;
+		width: 60%;
 	}
 }
 
@@ -332,7 +334,7 @@
 .services {
 	grid-column: center-start/center-end;
 
-	margin: 6rem 0;
+	margin: 4rem 0;
 
 	display: grid;
 	/* grid-template-columns: repeat(3, 1fr); */
@@ -362,7 +364,7 @@
 	border-radius: 15px 15px 2px 15px;
 }
 
-.service:first-child {
+.service--first-child {
 	background-color: var(--color-primary-dark);
 	color: var(--color-grey-light-1);
 }
@@ -378,11 +380,11 @@
 /* WorkComponent Start */
 .projects {
 	grid-column: center-start/center-end;
-	margin: 6rem 0;
+	margin: 4rem 0;
 
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-	grid-gap: 7rem;
+	grid-gap: 6rem;
 }
 
 .project {
@@ -392,7 +394,7 @@
 
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-row-gap: 3.5rem;
+	grid-row-gap: 3rem;
 }
 
 .project__img {
@@ -434,9 +436,8 @@
 }
 
 .svg {
-	fill: var(--color-primary);
-	height: 2rem;
-	width: 2rem;
+	height: 1.8rem;
+	width: 1.8rem;
 	margin-right: 1rem;
 }
 
@@ -447,10 +448,9 @@
 }
 
 /* ContactComponent Start */
-
 .contact__picture {
-	grid-column: center-start / col-end 3;
-	padding: 4rem;
+	grid-column: center-start / col-end 4;
+	padding: 8rem;
 
 	display: grid;
 	align-content: center;
@@ -458,10 +458,10 @@
 }
 
 .contact__content {
-	grid-column: col-start 4 / center-end;
+	grid-column: col-start 5 / center-end;
 
 	align-items: center;
-	padding: 4vw;
+	padding: 4rem;
 
 	display: grid;
 	align-content: center;
@@ -477,7 +477,7 @@
 }
 
 .contact__items:first-child {
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 
 	display: flex;
 	align-items: center;
@@ -512,10 +512,10 @@
 }
 
 .form__input {
-	font-size: 1.7rem;
+	font-size: 1.6rem;
 	font-family: inherit;
 	color: inherit;
-	padding: 1.5rem;
+	padding: 1rem;
 	border-radius: 3px;
 	background-color: var(--color-grey-light-4);
 	border: none;
@@ -542,7 +542,7 @@
 .form__label {
 	font-size: 1.5rem;
 	font-weight: 500;
-	margin-left: 1.5rem;
+	margin-left: 1rem;
 	margin-top: .7rem;
 	display: block;
 	transition: all .3s;
