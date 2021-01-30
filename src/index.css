@@ -26,6 +26,10 @@
 	--color-grey-dark-2: #777;
 	--color-grey-dark-3: #999;
 
+	/* Animation Variables */
+	--defaultDuration: .3s;
+	
+
 	/* MEDIA-QUERY RESPONSIVE BREAKPOINTS */
 	--bp-largest: 75em; /* 1200px */
 	--bp-large: 62.5em; /* 1000px */
