@@ -22,19 +22,14 @@ function About () {
 			</div>
 
 			<div className="about__content">
-				<FadeTransform
-					in
-					transformProps={{
-						exitTransform: 'scale(0.5) translatex(-50%)'
-					}}
-				>
+				<Fade in>
 					<h1 className="heading-1 mb-sm">
 						<span className="color-accent">About</span> Me
 					</h1>
-				</FadeTransform>
 
-				<Fade in>
-					<h2 className="heading-2 mb-md">Who I am</h2>
+					<h2 className="heading-2 heading-2--page-heading mb-md">
+						Who I am
+					</h2>
 
 					<p className="home__text mb-sm">
 						My name is Amandla Mnqobi Mzolo. I am a self-taught and

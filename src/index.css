@@ -28,7 +28,6 @@
 
 	/* Animation Variables */
 	--defaultDuration: .3s;
-	
 
 	/* MEDIA-QUERY RESPONSIVE BREAKPOINTS */
 	--bp-largest: 75em; /* 1200px */
