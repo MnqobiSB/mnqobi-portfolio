@@ -5,7 +5,7 @@ import { FadeTransform, Fade } from 'react-animation-components';
 
 function Skills () {
 	return (
-		<div className="container">
+		<div className="container container--skills">
 			<h1 className="heading-1 heading-1--page-heading mb-sm">
 				<FadeTransform
 					in

@@ -67,7 +67,7 @@ class Contact extends Component {
 
 	render () {
 		return (
-			<div className="container">
+			<div className="container container--home">
 				<h1 className="heading-1 heading-1--page-heading mb-sm">
 					<FadeTransform
 						in

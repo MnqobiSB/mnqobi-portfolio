@@ -1,10 +1,9 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import { FadeTransform, Fade } from 'react-animation-components';
 
 function About () {
 	return (
-		<div className="container">
+		<div className="container container--about">
 			<div className="about__picture">
 				<FadeTransform
 					in
@@ -16,6 +15,8 @@ function About () {
 						src="about-me.png"
 						alt="Amandla Mzolo"
 						className="about__img"
+						loading="lazy"
+						title="Logo"
 					/>
 				</FadeTransform>
 			</div>
@@ -49,9 +50,14 @@ function About () {
 						maintain. My hobbies are reading, blogging, playing
 						video games, skateboarding and listeng to music.
 					</p>
-					<NavLink to="/contact" className="btn">
+					<a
+						href="Mnqobi-Developer-Resume.pdf"
+						className="btn"
+						target="_blank"
+						rel="noreferrer"
+					>
 						Download my CV &rarr;
-					</NavLink>
+					</a>
 				</Fade>
 			</div>
 		</div>

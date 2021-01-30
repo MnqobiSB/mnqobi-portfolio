@@ -4,7 +4,7 @@ import { FadeTransform } from 'react-animation-components';
 
 function Home () {
 	return (
-		<div className="container">
+		<div className="container container--home">
 			<div className="home__content">
 				<FadeTransform
 					in
