@@ -75,7 +75,7 @@ class Contact extends Component {
 							exitTransform: 'scale(0.5) translatex(-50%)'
 						}}
 					>
-						Contact me
+						<span className="color-accent">Contact</span> Me
 					</FadeTransform>
 				</h1>
 				<h2 className="heading-2 heading-2--page-heading mb-md">

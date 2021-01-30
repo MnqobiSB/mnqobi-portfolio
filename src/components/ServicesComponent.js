@@ -13,7 +13,7 @@ function Services () {
 						exitTransform: 'scale(0.5) translatex(-50%)'
 					}}
 				>
-					My services
+					My <span className="color-accent">Services</span>
 				</FadeTransform>
 			</h1>
 			<h2 className="heading-2 heading-2--page-heading mb-md">

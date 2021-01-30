@@ -14,9 +14,15 @@ function Home () {
 				>
 					<p className="home__text mb-sm">Hi there! I am</p>
 					<h1 className="heading-1 heading-1--dark mb-md">
-						Amandla Mnqobi Mzolo
+						Amandla <span className="color-accent">
+							Mnqobi
+						</span>{' '}
+						Mzolo
 					</h1>
-					<h2 className="heading-2 mb-md">Front-End Web Developer</h2>
+					<h2 className="heading-2 mb-md">
+						<span className="color-accent">Front-End</span> Web
+						Developer
+					</h2>
 
 					<p className="home__text mb-md">
 						Welcome to my personal portfolio!

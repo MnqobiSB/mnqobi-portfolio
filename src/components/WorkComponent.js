@@ -13,7 +13,7 @@ function Work () {
 						exitTransform: 'scale(0.5) translatex(-50%)'
 					}}
 				>
-					My work
+					My <span className="color-accent">Work</span>
 				</FadeTransform>
 			</h1>
 			<h2 className="heading-2 heading-2--page-heading mb-md">

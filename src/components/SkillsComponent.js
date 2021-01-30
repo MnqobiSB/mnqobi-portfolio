@@ -13,7 +13,7 @@ function Skills () {
 						exitTransform: 'scale(0.5) translatex(-50%)'
 					}}
 				>
-					My skills
+					My <span className="color-accent">Skills</span>
 				</FadeTransform>
 			</h1>
 
