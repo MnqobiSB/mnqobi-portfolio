@@ -696,6 +696,14 @@ function Work () {
 						/>
 						<p>Node.js</p>
 					</div>
+					<div className="project__technology">
+						<IcomoonReact
+							className="svg"
+							iconSet={iconSet}
+							icon="npm"
+						/>
+						<p>NPM</p>
+					</div>
 					<div className="project__buttons">
 						<a
 							href="https://github.com/MnqobiSB/vanilla-js-ecomm-app"
@@ -767,9 +775,25 @@ function Work () {
 						<IcomoonReact
 							className="svg"
 							iconSet={iconSet}
+							icon="bootstrap"
+						/>
+						<p>Bootstrap</p>
+					</div>
+					<div className="project__technology">
+						<IcomoonReact
+							className="svg"
+							iconSet={iconSet}
 							icon="node-dot-js"
 						/>
 						<p>Node.js</p>
+					</div>
+					<div className="project__technology">
+						<IcomoonReact
+							className="svg"
+							iconSet={iconSet}
+							icon="mongodb"
+						/>
+						<p>Mongo DB</p>
 					</div>
 					<div className="project__buttons">
 						<a
@@ -842,9 +866,25 @@ function Work () {
 						<IcomoonReact
 							className="svg"
 							iconSet={iconSet}
+							icon="bootstrap"
+						/>
+						<p>Bootstrap</p>
+					</div>
+					<div className="project__technology">
+						<IcomoonReact
+							className="svg"
+							iconSet={iconSet}
 							icon="node-dot-js"
 						/>
 						<p>Node.js</p>
+					</div>
+					<div className="project__technology">
+						<IcomoonReact
+							className="svg"
+							iconSet={iconSet}
+							icon="mongodb"
+						/>
+						<p>Mongo DB</p>
 					</div>
 					<div className="project__buttons">
 						<a
